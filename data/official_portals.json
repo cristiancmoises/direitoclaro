@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Planalto — Pesquisa de Legislação",
+    "description": "Leis, decretos, medidas provisórias e outros atos federais; pesquise pelo número e pelo ano.",
+    "url": "https://www4.planalto.gov.br/legislacao/portal-legis/busca-avancada",
+    "scope": "Federal"
+  },
+  {
+    "title": "Senado — Legislação Federal",
+    "description": "Pesquisa e leitura de normas federais, incluindo versões estruturadas.",
+    "url": "https://www25.senado.leg.br/web/atividade/legislacao/legislacao-federal",
+    "scope": "Federal"
+  },
+  {
+    "title": "Câmara — Constituição e leis",
+    "description": "Acesso a bases de leis federais e ferramentas de legislação.",
+    "url": "https://www2.camara.leg.br/comunicacao/assessoria-de-imprensa/guia-para-jornalistas/constituicao-e-leis",
+    "scope": "Federal"
+  },
+  {
+    "title": "LexML — Rede de Informação Legislativa",
+    "description": "Pesquisa legislativa e jurídica entre diferentes instituições e esferas.",
+    "url": "https://www.lexml.gov.br/",
+    "scope": "Federal, estadual e municipal"
+  },
+  {
+    "title": "Diário Oficial da União",
+    "description": "Publicações oficiais, atos e normas administrativas federais.",
+    "url": "https://www.in.gov.br/",
+    "scope": "Federal"
+  },
+  {
+    "title": "Portais de assembleias e câmaras municipais",
+    "description": "Normas estaduais, municipais e distritais dependem do território; consulte os órgãos locais.",
+    "url": "https://www.lexml.gov.br/",
+    "scope": "Estadual e municipal"
+  }
+]

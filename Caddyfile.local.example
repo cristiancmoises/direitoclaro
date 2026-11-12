@@ -1,0 +1,32 @@
+{
+    admin off
+    auto_https disable_redirects
+    skip_install_trust
+    servers {
+        protocols h1 h2
+        max_header_size 16KB
+        timeouts {
+            read_header 10s
+            read_body 10s
+            write 30s
+            idle 60s
+        }
+    }
+}
+
+https://direito-claro.localhost:8443 {
+    tls internal
+    encode zstd gzip
+    header {
+        Strict-Transport-Security "max-age=300"
+        -Server
+    }
+    @write not method GET HEAD
+    respond @write 405
+    reverse_proxy portal:8080 {
+        transport http {
+            dial_timeout 3s
+            response_header_timeout 15s
+        }
+    }
+}

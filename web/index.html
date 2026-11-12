@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Entenda seus direitos e deveres com linguagem simples, referências oficiais e busca na legislação brasileira.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <title>Direito Claro — A lei é de todos.</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Menu principal">
+      <a class="brand" href="/" aria-label="Direito Claro — página inicial">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-type">direito<span>claro</span><small>CONHECIMENTO PARA TODOS</small></span>
+      </a>
+      <div class="side-scroll">
+        <p class="nav-title">EXPLORAR</p>
+        <nav class="side-nav" aria-label="Navegação">
+          <a href="#inicio" class="nav-link active" data-nav="inicio"><span class="nav-symbol">01</span> Visão geral</a>
+          <a href="#biblioteca" class="nav-link" data-nav="biblioteca"><span class="nav-symbol">02</span> Biblioteca de leis</a>
+          <a href="#resultados" class="nav-link" data-nav="resultados"><span class="nav-symbol">03</span> Pesquisar direitos</a>
+        </nav>
+        <div class="side-rule"></div>
+        <p class="nav-title">POR ASSUNTO</p>
+        <nav class="side-nav categories" id="side-categories" aria-label="Assuntos">
+          <span class="loading-categories">Carregando temas…</span>
+        </nav>
+      </div>
+      <div class="sidebar-footer">
+        <div class="source-pill"><span class="pulse-dot"></span> LINKS PARA FONTES OFICIAIS</div>
+        <p>Acesso ao conhecimento jurídico para toda a população.</p>
+        <span class="sidebar-credit">Brasil · Legislação federal</span>
+      </div>
+    </aside>
+
+    <div class="workspace">
+      <header class="topbar">
+        <a href="#inicio" class="mobile-brand top-brand"><img src="/assets/bandeira-brasil.svg" width="42" height="29" alt=""><span class="top-brand-text">direito<strong>claro</strong><small>LEIS PARA GENTE DE VERDADE</small></span></a>
+        <nav class="header-nav" aria-label="Navegação principal"><a href="#assuntos">Por assunto</a><a href="#biblioteca">Biblioteca</a><a href="#fontes">Outras normas</a><a href="#compromisso">O projeto</a></nav>
+        <div class="top-actions">
+          <span class="top-free">ACESSO LIVRE · BRASIL</span>
+          <button id="theme-toggle" class="icon-btn theme-toggle" type="button" aria-label="Ativar tema claro" title="Alternar tema"><span id="theme-icon">☼</span></button>
+        </div>
+      </header>
+
+      <aside class="release-preview" aria-label="Estado de revisão do portal">
+        <strong>Prévia educativa gratuita · em revisão</strong>
+        <p>Guias ilustrativos, ainda sem revisão jurídica independente. <a href="#fontes">Consulte as fontes oficiais</a>.</p>
+      </aside>
+
+      <main id="main">
+        <section class="hero" id="inicio" aria-labelledby="hero-title">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="eyebrow-square"></span> PARA ENTENDER O BRASIL, COMECE PELOS SEUS DIREITOS.</div>
+            <h1 id="hero-title">A lei é de todos.<br><span class="highlight-word">Entender</span> também<span class="hero-period">.</span></h1>
+            <p class="hero-subtitle">Pesquise situações do dia a dia, encontre as normas relacionadas e consulte o texto oficial. Explicações simples aparecem com identificação clara de sua revisão.</p>
+            <form id="search-form" class="search-box" role="search">
+              <span class="search-graphic" aria-hidden="true"><svg viewBox="0 0 24 24" width="23" height="23"><circle cx="10.8" cy="10.8" r="7"/><path d="m16.2 16.2 5 5"/></svg></span>
+              <label class="sr-only" for="search-input">O que você quer entender?</label>
+              <input id="search-input" type="search" placeholder="Ex.: Posso devolver uma compra pela internet?" maxlength="160" autocomplete="off" aria-keyshortcuts="Alt+/">
+              <span class="keyboard-hint" aria-hidden="true">Alt + /</span>
+              <button type="submit" class="search-submit">Buscar</button>
+            </form>
+            <div class="search-filters" role="group" aria-label="Filtros da pesquisa">
+              <label for="search-law">Pesquisar em
+                <select id="search-law"><option value="">Normas do catálogo</option></select>
+              </label>
+              <label for="search-explanations">Explicações
+                <select id="search-explanations"><option value="all">Todos os artigos</option><option value="reviewed">Somente revisadas</option><option value="illustrative">Amostras educativas</option></select>
+              </label>
+            </div>
+            <div class="popular-searches"><span>EXPERIMENTE</span>
+              <button type="button" class="suggestion" data-query="arrependimento">Devolver uma compra</button>
+              <button type="button" class="suggestion" data-query="escola">Direitos na escola</button>
+              <button type="button" class="suggestion" data-query="jornada">Jornada de trabalho</button>
+            </div>
+          </div>
+          <figure class="hero-art flag-editorial">
+            <span class="flag-overline">UM PAÍS. MUITOS DIREITOS.</span>
+            <img class="hero-flag" src="/assets/bandeira-brasil.svg" alt="Bandeira do Brasil, com campo verde, losango amarelo, esfera azul e a inscrição Ordem e Progresso" width="1000" height="700">
+            <figcaption><span>BRASIL · PARA TODAS AS PESSOAS</span><strong>Conhecer a lei também é cidadania.</strong></figcaption>
+            <span class="flag-index" aria-hidden="true">01 / 27</span>
+          </figure>
+        </section>
+
+        <section class="metrics" aria-label="Sobre o catálogo">
+          <div class="metric"><span class="metric-icon">N</span><div><strong id="metric-laws">117</strong><small>Normas para consultar</small></div></div>
+          <div class="metric"><span class="metric-icon">A</span><div><strong id="metric-articles">—</strong><small>Registros de artigos</small></div></div>
+          <div class="metric"><span class="metric-icon">G</span><div><strong id="metric-guides">—</strong><small>Explicações preliminares</small></div></div>
+          <div class="metric metric-note"><span class="metric-icon">BR</span><p><b>Do texto complexo à compreensão.</b><br>Com transparência sobre o que já foi importado e revisado.</p></div>
+        </section>
+
+        <section class="capture-notice" aria-label="Transparência do acervo">
+          <div><span class="capture-icon" aria-hidden="true">i</span><div><strong>Acervo em construção, com fontes verificáveis.</strong><p id="capture-message" role="status">Consultando o estado das importações...</p></div></div>
+          <a href="https://www.planalto.gov.br/ccivil_03/" target="_blank" rel="noopener noreferrer">Consultar fontes oficiais</a>
+        </section>
+
+        <section class="coverage-ledger" aria-label="Situação real do acervo" id="coverage-ledger">
+          <div class="coverage-intro"><span class="section-kicker">SITUAÇÃO DO ACERVO</span><h2>O que temos. <em>O que ainda falta.</em></h2>
+            <p>Uma lei cadastrada não é o mesmo que seu texto integral conferido. A atualização destas contagens não determina a vigência.</p></div>
+          <div class="coverage-figures" aria-live="polite">
+            <div><strong id="coverage-catalog">117</strong><span>Normas de referência</span></div>
+            <div><strong id="coverage-private">—</strong><span>Capturas privadas pendentes</span></div>
+            <div><strong id="coverage-published">—</strong><span>Artigos com texto publicado</span></div>
+            <div><strong id="coverage-legal">0</strong><span>Pareceres jurídicos independentes verificados</span></div>
+          </div>
+          <p class="coverage-caution" id="coverage-caution">Os resumos didáticos preliminares não são pareceres jurídicos. Consulte sempre a fonte oficial.</p>
+        </section>
+
+        <section class="topic-hub" id="assuntos" aria-labelledby="topic-heading">
+          <div class="section-head"><div><span class="section-kicker">01 / POR ONDE COMEÇAR</span><h2 id="topic-heading">A lei na <em>vida real.</em></h2><p>Escolha uma situação. Veja quais normas consultar e o que ainda precisa conferir.</p></div></div>
+          <div class="topic-grid" id="topic-grid" aria-live="polite"><p class="loading-state">Carregando assuntos...</p></div>
+          <p class="topic-caveat">Estes roteiros orientam sua pesquisa. Não são respostas jurídicas definitivas nem explicações revisadas de todos os artigos.</p>
+        </section>
+
+        <section id="tipos" class="norm-types-hub" aria-labelledby="types-heading">
+          <div class="section-head"><div><span class="section-kicker">ENTENDA OS NOMES</span><h2 id="types-heading">Lei, decreto, portaria: <em>qual a diferença?</em></h2><p>Uma explicação inicial sobre as diferentes espécies de normas. Clique em cada tipo para entender.</p></div></div>
+          <div id="norm-types-list" class="norm-types-list" aria-live="polite"><p class="loading-state">Carregando os tipos de normas...</p></div>
+        </section>
+
+        <section id="biblioteca" class="library-section" aria-labelledby="library-title">
+          <div class="section-head"><div><span class="section-kicker">02 / CONHEÇA A LEGISLAÇÃO</span><h2 id="library-title">Leis para <em>consultar.</em></h2><p>Encontre o nome e o número da norma. Acesse o texto disponível aqui ou siga para a fonte oficial.</p></div><button type="button" class="text-link" id="show-all">Ver as 117 normas</button></div>
+          <div class="category-pills" role="group" aria-label="Filtrar a biblioteca" id="category-pills"><button type="button" class="pill selected" data-category="Todas" aria-pressed="true">Todas</button></div>
+          <div class="law-grid" id="law-grid" aria-live="polite"><p class="loading-state">Carregando a biblioteca…</p></div>
+        </section>
+
+        <section id="resultados" class="results-section" aria-labelledby="results-heading">
+          <div class="section-head"><div><span class="section-kicker">03 / ENCONTRE RESPOSTAS</span><h2 id="results-heading" tabindex="-1">Aprenda <em>na prática.</em></h2><p id="results-description" role="status">Comece com um assunto ou escolha uma lei para ver seus artigos.</p></div><button type="button" id="clear-results" class="text-link" hidden>Limpar pesquisa <span>×</span></button></div>
+          <div class="result-surface" id="result-surface">
+            <div class="empty-results"><div class="empty-art">?</div><h3>Uma pergunta pode mudar muita coisa.</h3><p>Pesquise pelo que aconteceu com você, por um tema ou pelo número de um artigo.</p><div class="empty-examples"><button type="button" class="example-link" data-query="garantia">Garantia de produto</button><button type="button" class="example-link" data-query="dados pessoais">Meus dados pessoais</button><button type="button" class="example-link" data-query="prioridade">Atendimento prioritário</button></div></div>
+          </div>
+          <button id="load-more" type="button" class="load-more" hidden>Carregar mais artigos <span>↓</span></button>
+        </section>
+
+        <section id="fontes" class="source-hub" aria-labelledby="sources-heading">
+          <div class="section-head"><div><span class="section-kicker">04 / ALÉM DO NOSSO ACERVO</span><h2 id="sources-heading">Não encontrou? <em>Continue a pesquisa.</em></h2><p>Existem milhares de leis e atos normativos além deste catálogo. Consulte bases públicas para localizar normas federais, estaduais e municipais.</p></div></div>
+          <div class="sources-list" id="sources-list" aria-live="polite"><p class="loading-state">Carregando fontes de pesquisa...</p></div>
+          <p class="source-disclaimer">Links de pesquisa externa não significam que a norma foi importada, revisada ou está em vigor. Leis estaduais e municipais dependem do local.</p>
+        </section>
+
+        <section class="principles" id="compromisso" aria-labelledby="principles-title">
+          <div><span class="section-kicker">NOSSO COMPROMISSO</span><h2 id="principles-title">Clareza não deveria<br>ser um <em>privilégio.</em></h2></div>
+          <div class="principle-cards">
+            <article><span>01</span><h3>Palavras que acolhem</h3><p>Explicações diretas, exemplos cotidianos e um glossário para ajudar na leitura.</p></article>
+            <article><span>02</span><h3>Lei original sempre perto</h3><p>Um link para a norma oficial em cada artigo, sem esconder termos e condições.</p></article>
+            <article><span>03</span><h3>Transparência primeiro</h3><p>Se uma explicação não foi revisada ou uma lei não foi importada, você saberá.</p></article>
+          </div>
+        </section>
+
+        <footer class="footer"><div class="footer-brand"><img src="/assets/bandeira-brasil.svg" alt="" width="36" height="25"><span>Direito Claro <small>Educação jurídica aberta.</small></span></div><div class="footer-credits"><span>Desenvolvido com o ❤️ por <a href="https://linkedin.com/in/cristiancezarmoises" target="_blank" rel="noopener noreferrer">Cristian Cezar Moisés</a></span><span class="footer-dot" aria-hidden="true">·</span><a href="https://git.securityops.com.br/cristiancmoises/direitoclaro" target="_blank" rel="noopener noreferrer">Código Fonte</a></div><p class="footer-legal">Informação educativa, não substitui orientação jurídica. <a href="https://www.planalto.gov.br/ccivil_03/" rel="noopener noreferrer" target="_blank">Consulte a legislação oficial</a>.</p></footer>
+      </main>
+    </div>
+  </div>
+
+  <dialog id="article-dialog" aria-labelledby="dialog-title" class="reader-dialog">
+    <div class="reader-root">
+      <header class="reader-header"><span class="reader-eyebrow">SEU GUIA DE DIREITOS</span><div class="reader-controls"><button type="button" class="small-control" id="font-down" title="Diminuir texto" aria-label="A−: diminuir tamanho do texto">A−</button><button type="button" class="small-control" id="font-up" title="Aumentar texto" aria-label="A+: aumentar tamanho do texto">A+</button><button type="button" class="small-control" id="print-article" aria-label="Imprimir o artigo" title="Imprimir artigo">Imprimir</button><button type="button" class="close-btn" id="dialog-close" aria-label="Fechar">×</button></div></header>
+      <div class="reader-scroll">
+        <div class="reader-meta"><span id="reader-category">LEGISLAÇÃO</span><span class="meta-divider"></span><span id="reader-law-number">—</span></div>
+        <h2 id="dialog-title">Artigo</h2><p id="reader-law-name" class="reader-law-name"></p>
+        <div id="reader-state" class="reader-state" role="status"></div>
+        <div class="reading-switcher" role="group" aria-label="Como ler o artigo">
+          <button class="reading-mode is-active" type="button" data-reading-view="compare" aria-pressed="true">Comparar as duas versões</button>
+          <button class="reading-mode" type="button" data-reading-view="simple" aria-pressed="false">Linguagem simples</button>
+          <button class="reading-mode" type="button" data-reading-view="original" aria-pressed="false">Texto original</button>
+        </div>
+        <div class="reader-level-switch" id="reader-level-switch" hidden role="group" aria-label="Nível de leitura">
+          <span>Escolha como ler a explicação:</span>
+          <button type="button" data-reader-level="adults_basic" aria-pressed="true">Adultos · leitura simples</button>
+          <button type="button" data-reader-level="children_10_12" aria-pressed="false">10 a 12 anos</button>
+          <button type="button" data-reader-level="teens_13_17" aria-pressed="false" hidden>13 a 17 anos</button>
+        </div>
+        <p class="reader-provenance" id="reader-provenance">A data de captura não comprova que a norma esteja em vigor.</p>
+        <div class="reading-pair" id="reading-pair" data-view="compare">
+        <section class="reader-panel reader-explained"><div class="panel-heading"><span class="panel-badge">GUIA</span><h3>Em palavras simples</h3></div><p id="reader-simple" class="reader-text"></p><div id="reader-example" class="example-panel" hidden><strong>NA VIDA REAL</strong><p></p></div></section>
+        <section class="reader-panel reader-original"><div class="panel-heading"><span class="panel-badge panel-badge-neutral">LEI</span><h3>Texto da legislação</h3><button type="button" class="listen-btn" id="listen-button">Ouvir</button></div><p class="original-disclaimer">Transcrição automatizada da versão disponibilizada na fonte. Pode conter anotações, trechos revogados ou formatação perdida. Confira a vigência no link oficial.</p><div id="reader-original" class="reader-text original-text"></div></section>
+        </div>
+        <section id="reader-details" class="reader-panel reader-details" aria-label="Detalhes da explicação revisada" hidden>
+          <div class="panel-heading"><span class="panel-badge panel-badge-neutral">INFO</span><h3>O que mais preciso saber?</h3></div>
+          <dl id="reader-detail-fields" class="detail-fields"></dl>
+          <p id="reader-detail-review" class="original-disclaimer"></p>
+        </section>
+        <section class="reader-panel reader-history" aria-labelledby="history-heading">
+          <div class="panel-heading"><span class="panel-badge panel-badge-neutral">HIST</span><h3 id="history-heading">Histórico de capturas</h3></div>
+          <p class="original-disclaimer">As diferenças mostram o que este portal extraiu em datas diferentes. Não comprovam que uma lei foi alterada, revogada ou está em vigor.</p>
+          <button type="button" class="history-trigger" id="history-trigger" aria-expanded="false" aria-controls="history-content">Ver histórico deste artigo</button>
+          <div id="history-content" hidden><div id="history-items" class="history-items" aria-live="polite"></div><pre id="history-diff" class="history-diff" tabindex="0" hidden></pre></div>
+        </section>
+        <div class="reader-glossary"><h3>Mini glossário</h3><dl><div><dt>Vigência</dt><dd>Período em que uma regra produz efeitos jurídicos.</dd></div><div><dt>Caput</dt><dd>Parte principal de um artigo, antes dos parágrafos.</dd></div><div><dt>Revogado</dt><dd>Quando uma regra deixou de valer por mudança legal.</dd></div></dl></div>
+        <div class="reader-bottom"><a id="reader-source" href="https://www.planalto.gov.br/ccivil_03/" class="official-link" rel="noopener noreferrer" target="_blank">Conferir no site oficial</a><button id="share-article" type="button" class="share-button">Compartilhar artigo</button></div>
+        <p class="reader-caution">Este portal é educativo. Casos concretos podem exigir orientação da Defensoria Pública, de um advogado ou de um serviço público competente.</p>
+      </div>
+    </div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="/assets/app.js" defer></script>
+</body>
+</html>

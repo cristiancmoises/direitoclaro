@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.superpowers/
+data/*.sqlite3*
+public-data/
+backups/
+node_modules/
+.serena/
+local-data/

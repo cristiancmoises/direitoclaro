@@ -1,0 +1,2 @@
+-r requirements-dev.txt
+PyMuPDF==1.26.7

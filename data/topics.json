@@ -1,0 +1,568 @@
+[
+  {
+    "slug": "compras",
+    "title": "Compras e cobranças",
+    "question": "Comprei algo com defeito. O que devo consultar?",
+    "orientation": "Pesquise regras sobre consumo, publicidade, contratos e atendimento. A solução depende de como e onde a compra ocorreu.",
+    "laws": [
+      "consumidor",
+      "civil",
+      "juizados"
+    ],
+    "keywords": [
+      "compra",
+      "garantia",
+      "defeito",
+      "cobranca",
+      "devolucao",
+      "troca"
+    ]
+  },
+  {
+    "slug": "trabalho",
+    "title": "Trabalho e renda",
+    "question": "Fui demitido. Quais regras preciso verificar?",
+    "orientation": "Consulte a modalidade de contratação, as regras trabalhistas e possíveis benefícios. Prazos e condições variam.",
+    "laws": [
+      "clt",
+      "fgts",
+      "beneficios-previdencia",
+      "greve"
+    ],
+    "keywords": [
+      "demissao",
+      "salario",
+      "ferias",
+      "fgts",
+      "emprego"
+    ]
+  },
+  {
+    "slug": "criancas",
+    "title": "Infância e adolescência",
+    "question": "Quais direitos protegem crianças e adolescentes?",
+    "orientation": "Consulte o ECA, as normas educacionais e os serviços de proteção. Situações de risco exigem atendimento adequado.",
+    "laws": [
+      "eca",
+      "ldbe",
+      "constituicao"
+    ],
+    "keywords": [
+      "crianca",
+      "adolescente",
+      "escola",
+      "educacao",
+      "conselho tutelar"
+    ]
+  },
+  {
+    "slug": "idosos",
+    "title": "Pessoas idosas",
+    "question": "Onde estão as regras de proteção à pessoa idosa?",
+    "orientation": "O estatuto reúne normas sobre proteção, atendimento e participação social. Confira as condições de cada direito.",
+    "laws": [
+      "idoso",
+      "constituicao",
+      "beneficios-previdencia"
+    ],
+    "keywords": [
+      "idoso",
+      "idosa",
+      "idade",
+      "aposentadoria",
+      "prioridade"
+    ]
+  },
+  {
+    "slug": "saude",
+    "title": "Saúde e atendimento",
+    "question": "Quais leis consultar para atendimento de saúde?",
+    "orientation": "Comece pela Constituição e pelas políticas públicas aplicáveis. Serviços e condições podem variar entre entes federativos.",
+    "laws": [
+      "constituicao",
+      "idoso",
+      "inclusao",
+      "eca"
+    ],
+    "keywords": [
+      "saude",
+      "sus",
+      "tratamento",
+      "consulta",
+      "medicamento"
+    ]
+  },
+  {
+    "slug": "internet",
+    "title": "Internet e dados pessoais",
+    "question": "Como saber o que pode ser feito com meus dados?",
+    "orientation": "Consulte a LGPD, o Marco Civil da Internet e, conforme o caso, regras de consumo.",
+    "laws": [
+      "lgpd",
+      "marco-civil",
+      "consumidor",
+      "assinaturas-eletronicas"
+    ],
+    "keywords": [
+      "dados",
+      "privacidade",
+      "internet",
+      "senha",
+      "aplicativo",
+      "vazamento"
+    ]
+  },
+  {
+    "slug": "moradia",
+    "title": "Casa e aluguel",
+    "question": "Quais regras se aplicam ao meu aluguel?",
+    "orientation": "Consulte a Lei do Inquilinato e o Código Civil; contratos, garantias e situação concreta fazem diferença.",
+    "laws": [
+      "locacoes",
+      "civil",
+      "cidade",
+      "saneamento"
+    ],
+    "keywords": [
+      "aluguel",
+      "imovel",
+      "condominio",
+      "despejo",
+      "inquilino"
+    ]
+  },
+  {
+    "slug": "violencia",
+    "title": "Violência e proteção",
+    "question": "Onde encontrar regras de proteção contra violência?",
+    "orientation": "Consulte o Código Penal e as leis específicas de proteção. Se há risco imediato, procure atendimento de emergência.",
+    "laws": [
+      "maria-penha",
+      "penal",
+      "eca",
+      "idoso",
+      "violencia-psicologica"
+    ],
+    "keywords": [
+      "violencia",
+      "agressao",
+      "ameaca",
+      "protecao",
+      "denuncia"
+    ]
+  },
+  {
+    "slug": "igualdade",
+    "title": "Igualdade e acessibilidade",
+    "question": "Quais normas proíbem discriminação?",
+    "orientation": "Consulte leis específicas de igualdade, acessibilidade e proteção contra preconceito.",
+    "laws": [
+      "inclusao",
+      "igualdade-racial",
+      "racismo",
+      "autismo"
+    ],
+    "keywords": [
+      "racismo",
+      "discriminacao",
+      "pcd",
+      "acessibilidade",
+      "autismo"
+    ]
+  },
+  {
+    "slug": "educacao",
+    "title": "Escola e universidade",
+    "question": "Onde encontro regras para estudar?",
+    "orientation": "Comece pela Constituição, pela LDB e pelas leis específicas de acesso ao ensino.",
+    "laws": [
+      "ldbe",
+      "cotas",
+      "eca",
+      "juventude"
+    ],
+    "keywords": [
+      "matricula",
+      "faculdade",
+      "cotas",
+      "escola",
+      "universidade"
+    ]
+  },
+  {
+    "slug": "justica",
+    "title": "Processos e polícia",
+    "question": "O que preciso saber sobre processos judiciais?",
+    "orientation": "Consulte as normas de processo correspondentes ao assunto. Procedimentos civis e criminais são distintos.",
+    "laws": [
+      "cpc",
+      "cpp",
+      "penal",
+      "juizados",
+      "mandado-seguranca"
+    ],
+    "keywords": [
+      "policia",
+      "audiencia",
+      "processo",
+      "advogado",
+      "defensoria"
+    ]
+  },
+  {
+    "slug": "transito",
+    "title": "Trânsito e multas",
+    "question": "Onde consultar regras de trânsito?",
+    "orientation": "O Código de Trânsito reúne regras, infrações e procedimentos. Confira o enquadramento do caso concreto.",
+    "laws": [
+      "ctb",
+      "constituicao"
+    ],
+    "keywords": [
+      "multa",
+      "carro",
+      "habilitacao",
+      "transito",
+      "acidente"
+    ]
+  },
+  {
+    "slug": "cidadania",
+    "title": "Serviços e informações públicas",
+    "question": "Posso pedir informações a um órgão público?",
+    "orientation": "Consulte as normas de acesso à informação, atendimento e processos administrativos; existem hipóteses de sigilo.",
+    "laws": [
+      "laih",
+      "usuarios-servicos",
+      "burocracia",
+      "governo-digital"
+    ],
+    "keywords": [
+      "informacao",
+      "transparencia",
+      "ouvidoria",
+      "servico publico"
+    ]
+  },
+  {
+    "slug": "ambiente",
+    "title": "Meio ambiente",
+    "question": "Quais normas protegem o meio ambiente?",
+    "orientation": "Consulte a legislação ambiental federal e pesquise normas estaduais e municipais que também possam se aplicar.",
+    "laws": [
+      "florestal",
+      "meio-ambiente",
+      "crimes-ambientais",
+      "residuos"
+    ],
+    "keywords": [
+      "agua",
+      "lixo",
+      "arvore",
+      "natureza",
+      "ambiental"
+    ]
+  },
+  {
+    "slug": "empreender",
+    "title": "Negócios e tributos",
+    "question": "Quais regras consultar antes de empreender?",
+    "orientation": "Consulte regimes para empresas, contratos e obrigações tributárias; avalie normas estaduais, municipais e setoriais.",
+    "laws": [
+      "microempresas",
+      "ctn",
+      "liberdade-economica",
+      "recuperacao-judicial"
+    ],
+    "keywords": [
+      "mei",
+      "empresa",
+      "imposto",
+      "nota fiscal",
+      "cnpj"
+    ]
+  },
+  {
+    "slug": "assistencia-social",
+    "title": "Assistência social",
+    "question": "Preciso de apoio social. Por onde começo?",
+    "orientation": "Consulte a assistência social, seus serviços e critérios de acesso; o CRAS pode orientar sobre a rede local.",
+    "laws": [
+      "assistencia-social",
+      "bolsa-familia",
+      "constituicao"
+    ],
+    "keywords": [
+      "CRAS",
+      "BPC",
+      "LOAS",
+      "serviço",
+      "social",
+      "benefício",
+      "cadastro"
+    ]
+  },
+  {
+    "slug": "sus",
+    "title": "Atendimento pelo SUS",
+    "question": "Como entender meus direitos no serviço público de saúde?",
+    "orientation": "Pesquise a organização do SUS e políticas locais. A disponibilidade e o atendimento exigem verificar o serviço responsável.",
+    "laws": [
+      "sus",
+      "participacao-sus",
+      "constituicao"
+    ],
+    "keywords": [
+      "SUS",
+      "consulta",
+      "remédio",
+      "fila",
+      "hospital",
+      "atendimento"
+    ]
+  },
+  {
+    "slug": "planos-saude",
+    "title": "Problemas com plano de saúde",
+    "question": "Meu plano negou atendimento. Que normas consultar?",
+    "orientation": "Verifique contrato, legislação dos planos e regulação aplicável. A análise depende da cobertura e do procedimento.",
+    "laws": [
+      "planos-saude",
+      "consumidor",
+      "civil"
+    ],
+    "keywords": [
+      "plano",
+      "saúde",
+      "convênio",
+      "cobertura",
+      "negativa",
+      "ANS"
+    ]
+  },
+  {
+    "slug": "violencia-sexual",
+    "title": "Proteção após violência sexual",
+    "question": "Onde buscar normas sobre atendimento após violência sexual?",
+    "orientation": "Procure imediatamente atendimento de saúde e proteção competente. A legislação indicada orienta os deveres do serviço público.",
+    "laws": [
+      "atendimento-violencia-sexual",
+      "maria-penha",
+      "escuta-protegida"
+    ],
+    "keywords": [
+      "violência",
+      "sexual",
+      "atendimento",
+      "vítima",
+      "hospital"
+    ]
+  },
+  {
+    "slug": "bullying",
+    "title": "Bullying na escola",
+    "question": "O que consultar quando há intimidação na escola?",
+    "orientation": "Busque as normas de prevenção, proteção e os procedimentos da rede de ensino, conforme a situação.",
+    "laws": [
+      "bullying",
+      "escuta-protegida",
+      "eca",
+      "protecao-infancia-digital"
+    ],
+    "keywords": [
+      "bullying",
+      "cyberbullying",
+      "escola",
+      "intimidação",
+      "aluno"
+    ]
+  },
+  {
+    "slug": "primeira-infancia",
+    "title": "Crianças pequenas",
+    "question": "Que leis tratam do cuidado com crianças pequenas?",
+    "orientation": "Comece pelas políticas da primeira infância, pelo ECA e por normas de educação e saúde.",
+    "laws": [
+      "primeira-infancia",
+      "eca",
+      "ldbe"
+    ],
+    "keywords": [
+      "bebê",
+      "creche",
+      "criança",
+      "pequena",
+      "primeira",
+      "infância"
+    ]
+  },
+  {
+    "slug": "acessibilidade",
+    "title": "Acessibilidade e prioridade",
+    "question": "Como pesquisar direitos de acessibilidade?",
+    "orientation": "Consulte as regras de acessibilidade, inclusão e atendimento prioritário; verifique os requisitos aplicáveis.",
+    "laws": [
+      "acessibilidade",
+      "prioridade-atendimento",
+      "inclusao"
+    ],
+    "keywords": [
+      "rampa",
+      "prioridade",
+      "fila",
+      "deficiência",
+      "barreira",
+      "acessibilidade"
+    ]
+  },
+  {
+    "slug": "migracao",
+    "title": "Documentos e migração",
+    "question": "Sou migrante. Quais normas devo conhecer?",
+    "orientation": "Veja a legislação migratória, registros e a rede pública competente para a situação da pessoa.",
+    "laws": [
+      "migracao",
+      "refugiados",
+      "registros-publicos"
+    ],
+    "keywords": [
+      "migrante",
+      "refugiado",
+      "estrangeiro",
+      "documento",
+      "residência"
+    ]
+  },
+  {
+    "slug": "cartorio",
+    "title": "Certidões e cartório",
+    "question": "Preciso de certidão ou registro: onde encontro a lei?",
+    "orientation": "Pesquise registros públicos e atos gratuitos; confira no cartório ou órgão responsável as exigências.",
+    "laws": [
+      "registros-publicos",
+      "gratuidade-cidadania",
+      "civil"
+    ],
+    "keywords": [
+      "certidão",
+      "casamento",
+      "nascimento",
+      "cartório",
+      "gratuidade"
+    ]
+  },
+  {
+    "slug": "vitimas",
+    "title": "Vítimas e testemunhas",
+    "question": "Que normas protegem vítimas ou testemunhas ameaçadas?",
+    "orientation": "A proteção depende de avaliação pelas autoridades competentes. Consulte a legislação e os serviços de apoio.",
+    "laws": [
+      "protecao-testemunhas",
+      "escuta-protegida",
+      "defensoria-publica"
+    ],
+    "keywords": [
+      "testemunha",
+      "vítima",
+      "ameaça",
+      "proteção"
+    ]
+  },
+  {
+    "slug": "acordo",
+    "title": "Resolver conflitos sem processo",
+    "question": "Existe alguma norma sobre acordos e mediação?",
+    "orientation": "Confira mediação, arbitragem e juizados, considerando se o caso admite essas vias.",
+    "laws": [
+      "mediacao",
+      "arbitragem",
+      "juizados"
+    ],
+    "keywords": [
+      "conciliação",
+      "mediação",
+      "acordo",
+      "arbitragem",
+      "processo"
+    ]
+  },
+  {
+    "slug": "dividas",
+    "title": "Dívidas e empréstimos",
+    "question": "Tenho muitas dívidas. Que normas devo pesquisar?",
+    "orientation": "Pesquise a proteção do consumidor, as regras sobre superendividamento e o contrato específico.",
+    "laws": [
+      "superendividamento",
+      "consumidor",
+      "credito-consignado"
+    ],
+    "keywords": [
+      "dívida",
+      "crédito",
+      "banco",
+      "empréstimo",
+      "juros",
+      "consignado"
+    ]
+  },
+  {
+    "slug": "compra-imovel",
+    "title": "Comprar imóvel",
+    "question": "Quais leis consultar antes de comprar apartamento ou lote?",
+    "orientation": "Confira contratos, regras de registro, incorporação e loteamentos; os detalhes mudam conforme o imóvel.",
+    "laws": [
+      "condominios",
+      "parcelamento-solo",
+      "registros-publicos",
+      "civil"
+    ],
+    "keywords": [
+      "compra",
+      "apartamento",
+      "terreno",
+      "lote",
+      "condomínio",
+      "financiamento"
+    ]
+  },
+  {
+    "slug": "agua-ambiente",
+    "title": "Água e conservação",
+    "question": "Quais normas protegem água, florestas e reservas?",
+    "orientation": "Consulte a legislação ambiental, os órgãos responsáveis e as regras locais de uso do solo e da água.",
+    "laws": [
+      "recursos-hidricos",
+      "unidades-conservacao",
+      "mata-atlantica",
+      "meio-ambiente"
+    ],
+    "keywords": [
+      "água",
+      "rio",
+      "parque",
+      "floresta",
+      "reserva",
+      "meio",
+      "ambiente"
+    ]
+  },
+  {
+    "slug": "trabalho-mulheres",
+    "title": "Mulheres no trabalho",
+    "question": "Quais normas buscar para igualdade e proteção no emprego?",
+    "orientation": "Verifique as normas trabalhistas, os instrumentos de combate à discriminação e as medidas específicas.",
+    "laws": [
+      "igualdade-salarial",
+      "emprega-mais-mulheres",
+      "clt"
+    ],
+    "keywords": [
+      "mulher",
+      "salário",
+      "igualdade",
+      "maternidade",
+      "assédio",
+      "trabalho"
+    ]
+  }
+]

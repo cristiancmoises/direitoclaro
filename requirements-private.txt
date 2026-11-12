@@ -1,0 +1,3 @@
+# Private offline signer/verifier only. Not required to serve the public read-only site.
+# The private GNU/Linux host must also provide libsodium (Ed25519 point validation).
+cryptography==50.0.0
