@@ -1,0 +1,63 @@
+# Include in an existing nginx http {} context.
+# This example uses a reader or approved forwarded backend on edge loopback:8080.
+# Replace PORTAL_CERT_NAME with a real certificate covering both server names.
+limit_req_zone $binary_remote_addr zone=direito_claro_preview:1m rate=10r/s;
+
+server {
+    listen 80;
+    server_name direito.securityops.co direito.securityops.com.br;
+    server_tokens off;
+    access_log off;
+    error_log /dev/null crit;
+
+    location ^~ /.well-known/acme-challenge/ {
+        root /var/lib/direito-claro/acme-challenge;
+        try_files $uri =404;
+    }
+    location / { return 301 https://$host$request_uri; }
+}
+
+server {
+    listen 443 ssl;
+    server_name direito.securityops.co direito.securityops.com.br;
+    server_tokens off;
+    ssl_certificate /etc/letsencrypt/live/PORTAL_CERT_NAME/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/PORTAL_CERT_NAME/privkey.pem;
+    ssl_protocols TLSv1.2 TLSv1.3;
+    ssl_session_tickets off;
+    auth_basic off;
+    access_log off;
+    error_log /dev/null crit;
+
+    client_max_body_size 1k;
+    client_body_timeout 10s;
+    client_header_timeout 10s;
+    client_header_buffer_size 1k;
+    large_client_header_buffers 2 8k;
+    keepalive_timeout 15s;
+    send_timeout 15s;
+    limit_req zone=direito_claro_preview burst=20 nodelay;
+    limit_req_status 429;
+
+    if ($request_method !~ ^(GET|HEAD)$) { return 405; }
+    location ~ ^/(?:docs|redoc|openapi\.json|private|admin|app|scripts)(?:/|$) { return 404; }
+    location ~ ^/api/(?:admin|private|editorial|drafts|reviews)(?:/|$) { return 404; }
+    location ~* \.(?:sqlite3?|db|zip|age|pem|key)$ { return 404; }
+
+    add_header Strict-Transport-Security "max-age=300" always;
+    add_header X-Robots-Tag "noindex, nofollow, noarchive" always;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Connection "";
+        proxy_set_header Host $host;
+        proxy_set_header X-Forwarded-Proto https;
+        proxy_set_header X-Forwarded-For $remote_addr;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header Authorization "";
+        proxy_connect_timeout 3s;
+        proxy_read_timeout 15s;
+        proxy_send_timeout 15s;
+    }
+}

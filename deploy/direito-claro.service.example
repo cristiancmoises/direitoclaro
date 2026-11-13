@@ -1,0 +1,62 @@
+# Native systemd reader; install as /etc/systemd/system/direito-claro.service.
+[Unit]
+Description=Direito Claro v0.25.0 public educational preview reader
+After=network.target
+ConditionPathExists=/srv/direito-claro/current/app/main.py
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=portal
+Group=portal
+WorkingDirectory=/srv/direito-claro/current
+Environment=DIREITO_DEPLOYMENT_MODE=staging
+Environment=DIREITO_PUBLIC_READ_ONLY=1
+Environment=DIREITO_DATABASE=/srv/direito-claro/public-data/public.sqlite3
+Environment=FORWARDED_ALLOW_IPS=127.0.0.1
+Environment=PYTHONDONTWRITEBYTECODE=1
+Environment=PYTHONUNBUFFERED=1
+Environment=TMPDIR=/run/direito-claro
+Environment=HOME=/nonexistent
+ExecStartPre=/usr/bin/sha256sum --check --strict /etc/direito-claro/public-snapshot.sha256
+ExecStart=/srv/direito-claro/current/.venv/bin/python -m uvicorn app.main:app --host 127.0.0.1 --port 8080 --workers 1 --proxy-headers --forwarded-allow-ips 127.0.0.1 --no-access-log --limit-concurrency 64 --backlog 128 --timeout-keep-alive 5 --timeout-graceful-shutdown 10
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=30
+TimeoutStopSec=15
+UMask=0077
+RuntimeDirectory=direito-claro
+RuntimeDirectoryMode=0700
+NoNewPrivileges=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectHostname=yes
+RestrictSUIDSGID=yes
+RestrictRealtime=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+MemoryDenyWriteExecute=yes
+SystemCallArchitectures=native
+SystemCallFilter=@system-service
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+ReadOnlyPaths=/srv/direito-claro/current /srv/direito-claro/public-data/public.sqlite3
+ReadWritePaths=/run/direito-claro
+TasksMax=128
+MemoryMax=512M
+CPUQuota=100%
+LimitNOFILE=1024
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=direito-claro
+
+[Install]
+WantedBy=multi-user.target
