@@ -12,10 +12,34 @@
     "scope": "Proteção financeira"
   },
   {
+    "title": "Celular Seguro (Ministério da Justiça)",
+    "description": "Cadastre e bloqueie o celular em caso de roubo, furto ou perda, com alerta a bancos e operadoras.",
+    "url": "https://celularseguro.mj.gov.br",
+    "scope": "Proteção pessoal"
+  },
+  {
     "title": "Consumidor.gov.br",
     "description": "Registre reclamações contra empresas e acompanhe a solução pelo serviço oficial do governo federal.",
     "url": "https://www.consumidor.gov.br",
     "scope": "Consumo"
+  },
+  {
+    "title": "Defesa do Consumidor (SENACON)",
+    "description": "Orientações da Secretaria Nacional do Consumidor e canais públicos de defesa dos direitos do consumidor.",
+    "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/consumidor",
+    "scope": "Consumo"
+  },
+  {
+    "title": "ANS (Agência Nacional de Saúde Suplementar)",
+    "description": "Consulte e reclame sobre planos de saúde junto à agência reguladora do setor.",
+    "url": "https://www.gov.br/ans/pt-br",
+    "scope": "Saúde"
+  },
+  {
+    "title": "Anatel (Telecomunicações)",
+    "description": "Reclamações sobre telefonia, internet e TV por assinatura junto à agência reguladora.",
+    "url": "https://www.gov.br/anatel/pt-br",
+    "scope": "Telecomunicações"
   },
   {
     "title": "Fala.BR (CGU)",
@@ -34,6 +58,12 @@
     "description": "Serviços de CPF, imposto de renda e outras obrigações tributárias federais.",
     "url": "https://www.gov.br/receitafederal/pt-br",
     "scope": "Tributos"
+  },
+  {
+    "title": "Portal da Transparência",
+    "description": "Consulte gastos públicos federais, repasses, contratos e servidores.",
+    "url": "https://portaldatransparencia.gov.br",
+    "scope": "Controle social"
   },
   {
     "title": "Gov.br",

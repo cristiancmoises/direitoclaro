@@ -39,7 +39,7 @@ def test_curated_catalog_topics_portals_are_well_formed():
     for link in useful_links:
         assert link['title'] and link['url'] and link['scope'] and link['description']
         assert link['url'].startswith('https://')
-        assert urlparse(link['url']).hostname in {'www.gov.br','www.bcb.gov.br','www.consumidor.gov.br','falabr.cgu.gov.br','meu.inss.gov.br'}
+        assert urlparse(link['url']).hostname in {'www.gov.br','www.bcb.gov.br','www.consumidor.gov.br','falabr.cgu.gov.br','meu.inss.gov.br','celularseguro.mj.gov.br','portaldatransparencia.gov.br'}
 
 
 def test_discovery_ranks_statutes_without_claiming_completeness():
