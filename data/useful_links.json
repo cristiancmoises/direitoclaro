@@ -1,0 +1,44 @@
+[
+  {
+    "title": "BC PROTEGE+ (Banco Central)",
+    "description": "Bloqueie a abertura fraudulenta de contas e produtos financeiros em seu nome. Requer conta gov.br nível prata ou ouro com verificação em duas etapas.",
+    "url": "https://www.gov.br/pt-br/servicos/proteger-se-com-o-bc-protege",
+    "scope": "Proteção financeira"
+  },
+  {
+    "title": "Registrato (Banco Central)",
+    "description": "Consulte contas, chaves Pix, empréstimos e financiamentos registrados em seu nome. Requer conta gov.br nível prata ou ouro.",
+    "url": "https://www.bcb.gov.br/meubc/registrato",
+    "scope": "Proteção financeira"
+  },
+  {
+    "title": "Consumidor.gov.br",
+    "description": "Registre reclamações contra empresas e acompanhe a solução pelo serviço oficial do governo federal.",
+    "url": "https://www.consumidor.gov.br",
+    "scope": "Consumo"
+  },
+  {
+    "title": "Fala.BR (CGU)",
+    "description": "Pedidos de informação, denúncias e manifestações junto ao governo federal.",
+    "url": "https://falabr.cgu.gov.br",
+    "scope": "Cidadania"
+  },
+  {
+    "title": "Meu INSS",
+    "description": "Consulte benefícios, contribuições e agende atendimentos da previdência social.",
+    "url": "https://meu.inss.gov.br",
+    "scope": "Previdência"
+  },
+  {
+    "title": "Receita Federal",
+    "description": "Serviços de CPF, imposto de renda e outras obrigações tributárias federais.",
+    "url": "https://www.gov.br/receitafederal/pt-br",
+    "scope": "Tributos"
+  },
+  {
+    "title": "Gov.br",
+    "description": "Portal único com o catálogo de serviços públicos digitais do governo federal.",
+    "url": "https://www.gov.br",
+    "scope": "Cidadania"
+  }
+]

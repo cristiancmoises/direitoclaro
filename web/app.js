@@ -14,6 +14,7 @@
   let topics = [];
   let normTypes = [];
   let officialPortals = [];
+  let usefulLinks = [];
   let activeLaw = null;
   let activeQuery = '';
   let nextOffset = null;
@@ -129,6 +130,17 @@
       link.append(el('span','source-category',source.scope),el('strong','',source.title),
                   el('span','source-desc',source.description),el('span','source-arrow','Abrir'));
       area.append(link);
+    }
+  }
+
+  function renderUsefulLinks() {
+    const area=$('#useful-links-list');area.replaceChildren();
+    for (const link of usefulLinks) {
+      const a=el('a','source-entry');a.href=link.url;
+      a.target='_blank';a.rel='noopener noreferrer';
+      a.append(el('span','source-category',link.scope),el('strong','',link.title),
+               el('span','source-desc',link.description),el('span','source-arrow','Abrir'));
+      area.append(a);
     }
   }
 
@@ -557,9 +569,9 @@
       const data=await getJSON('/api/laws');laws=data.laws;
       const searchLaw=$('#search-law');
       laws.forEach(law=>{const option=el('option','',law.short);option.value=law.slug;searchLaw.append(option);});
-      const [t,p,n]=await Promise.all([getJSON('/api/topics'),getJSON('/api/portals'),getJSON('/api/norm-types')]);
-      topics=t.topics;officialPortals=p.portals;normTypes=n.types;
-      initCategories();renderLaws();renderTopics();renderPortals();renderNormTypes();updateStats();updateCaptureStatus();updateCoverageProgress();
+      const [t,p,n,u]=await Promise.all([getJSON('/api/topics'),getJSON('/api/portals'),getJSON('/api/norm-types'),getJSON('/api/useful-links')]);
+      topics=t.topics;officialPortals=p.portals;normTypes=n.types;usefulLinks=u.links;
+      initCategories();renderLaws();renderTopics();renderPortals();renderUsefulLinks();renderNormTypes();updateStats();updateCaptureStatus();updateCoverageProgress();
       const url=new URL(location.href);
       if(url.searchParams.get('lei')&&url.searchParams.get('art')) {
         await openArticle(url.searchParams.get('lei'),url.searchParams.get('art'));

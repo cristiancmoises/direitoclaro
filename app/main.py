@@ -82,6 +82,11 @@ def official_portals():
     return {'portals':load_collection('official_portals.json'),
             'notice':'Referências externas de pesquisa. Não há consulta em tempo real nem garantia de integralidade.'}
 
+@app.get('/api/useful-links')
+def useful_links():
+    return {'links':load_collection('useful_links.json'),
+            'notice':'Serviços públicos e canais oficiais para agir. Links externos; confira os requisitos de cada serviço no site de destino.'}
+
 @app.get('/api/discover')
 def discovery(q: str = Query('', max_length=160), limit: int = Query(12, ge=1, le=50)):
     with connect() as con:

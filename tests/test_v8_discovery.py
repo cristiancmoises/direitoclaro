@@ -16,9 +16,11 @@ def test_curated_catalog_topics_portals_are_well_formed():
     catalog=load_collection('catalog.json')
     topics=load_collection('topics.json')
     portals=load_collection('official_portals.json')
+    useful_links=load_collection('useful_links.json')
     assert len(catalog)==117
     assert len(topics)==30
     assert len(portals)==6
+    assert len(useful_links)>=5
     norm_types=load_collection('norm_types.json')
     assert len(norm_types)==12
     assert all(t['name'] and t['simple'] and t['note'] for t in norm_types)
@@ -34,6 +36,10 @@ def test_curated_catalog_topics_portals_are_well_formed():
     for source in portals:
         assert source['url'].startswith('https://')
         assert urlparse(source['url']).hostname in {'www.lexml.gov.br','www.in.gov.br','www4.planalto.gov.br','www25.senado.leg.br','www2.camara.leg.br'}
+    for link in useful_links:
+        assert link['title'] and link['url'] and link['scope'] and link['description']
+        assert link['url'].startswith('https://')
+        assert urlparse(link['url']).hostname in {'www.gov.br','www.bcb.gov.br','www.consumidor.gov.br','falabr.cgu.gov.br','meu.inss.gov.br'}
 
 
 def test_discovery_ranks_statutes_without_claiming_completeness():
@@ -65,6 +71,7 @@ def test_api_discovery_coverage_status(monkeypatch):
             assert len(laws)==117
             assert client.get('/api/topics').json()['topics'][0]['slug']=='compras'
             assert len(client.get('/api/portals').json()['portals'])==6
+            assert len(client.get('/api/useful-links').json()['links'])>=5
             assert len(client.get('/api/norm-types').json()['types'])==12
             results=client.get('/api/discover',params={'q':'Lei 14.133/2021'}).json()
             assert results['catalog_matches'][0]['slug']=='licitacoes'
